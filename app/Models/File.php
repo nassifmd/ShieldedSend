@@ -10,7 +10,7 @@ class File extends Model
     use HasFactory;
 
     protected $fillable = [
-        'file_path',  // Add 'file_path' to the fillable attributes
+        'file_path', 
         'public_key',
         'private_key',
         'serial_number',

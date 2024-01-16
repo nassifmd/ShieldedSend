@@ -23,7 +23,10 @@ Route::get('/download', [FileController::class, 'downloadForm']);
 Route::post('/download', [FileController::class, 'download']);
 
 Route::get('/upload', [FileController::class, 'index']);
-Route::post('/upload', [FileController::class, 'upload'])->name('upload'); // Define the name 'upload' for the route
-Route::get('/download', [FileController::class, 'downloadForm'])->name('download'); // Define the name 'download' for the route
+Route::post('/upload', [FileController::class, 'upload'])->name('upload'); 
+Route::get('/download', [FileController::class, 'downloadForm'])->name('download'); 
+
+
+Route::get('/showPrivateKey/{serial_number}', 'App\Http\Controllers\FileController@showPrivateKey')->name('showPrivateKey');
 
 

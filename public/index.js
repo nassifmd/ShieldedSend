@@ -10,6 +10,7 @@
                 }
             });
         });
+        
 
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('encryptSerial').addEventListener('click', function() {
@@ -55,13 +56,13 @@
        tl.from("header", { y: "-100%", duration: 1 });
        
        // Animation for hero section
-       tl.from(".hero h2, .hero p, .hero .cta-button", { opacity: 0, stagger: 0.5, duration: 1, delay: 0.5 });
+       tl.from(".hero h2, h5, .hero p, .hero .cta-button", { opacity: 0, stagger: 0.5, duration: 1, delay: 0.5 });
        
        // Animation for features section
-       tl.from(".feature", { opacity: 0, stagger: 0.5, duration: 1 });
+    //    tl.from(".feature", { opacity: 0, stagger: 0.5, duration: 1 });
        
        // Animation for footer
-       tl.from("footer", { y: "100%", duration: 1, delay: 0.5 });
+    //    tl.from("footer", { y: "100%", duration: 1, delay: 0.5 });
        
 
 // how to use

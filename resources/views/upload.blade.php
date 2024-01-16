@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+    
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -26,10 +27,11 @@
 
                         <div class="form-group">
                             <label for="serial_number">Serial Number</label>
-                            <input type="text" name="serial_number" id="serial_number" class="form-control" required>
+                            <input type="text" name="serial_number" id="serial_number" class="form-control" value="{{ $serial_number }}" readonly>
                         </div>
 
-                        <button type="button" id="encryptSerial" class="btn btn-primary">Encrypt and Show Serial</button>
+                        <p>Encrypt the serial number and send it to the receiver.</p>
+                        <button type="button" id="encryptSerial" class="btn btn-primary">Encrypt</button>
 
                         <div id="encryptedSerialPopup" style="display: none;">
                             <p><strong>Encrypted Serial Number:</strong></p>

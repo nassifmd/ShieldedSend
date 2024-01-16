@@ -97,7 +97,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #e5e5e5;
+    padding-bottom: 20px;
     font-family: ubuntu;
 }
 
@@ -117,6 +117,7 @@ footer {
     background-size: cover;
     margin: auto;
 }
+
 .silhouette .cover {
     position: absolute;
     top: 0;
@@ -222,8 +223,8 @@ font-size: 10pt;
 }
 
 button {
-width: 60px;
-height: auto;
+width: 180px;
+height: 50px;
 border: none;
 color: white;
 border-radius: 10px;
@@ -251,4 +252,64 @@ width: 100%;
 text-align: center;
 font-size: 40pt;
 color: grey;
+}
+
+.lottie-player-container {
+    position: relative;
+}
+
+.floating-lottie-player {
+position: absolute;
+/* top: 0; */
+bottom: 10;
+left: 20; /* You can adjust these values based on your layout */
+z-index: 1; /* Ensure it's above other content */
+}
+
+.lottie-player-container1 {
+    position: relative;
+}
+
+.floating-lottie-player1 {
+position: absolute;
+/* top: 0; */
+bottom: 10;
+right: 20; /* You can adjust these values based on your layout */
+z-index: 1; /* Ensure it's above other content */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .hero {
+        padding: 3em 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .lottie-player-container {
+        display: none;
+    }
+
+    .lottie-player-container1 {
+        bottom: 100;
+        right: 10;
+    } 
+
+    .containa {
+        padding-top: 50px;
+
+    }
+
+    footer {
+        margin-top: 1000px;
+    }
 }

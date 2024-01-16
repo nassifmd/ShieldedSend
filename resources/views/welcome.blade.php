@@ -3,30 +3,50 @@
 
 @section('content')
 <style>
-
+    
 </style>
 
-    <section class="hero">
-        <div class="container">
-            <h2>A Secured Way of Sending Files</h2>
-            <h2>Based on R.S.A Algorithm & Huffman Coding Compression technique</h2>
-            <p>No need to signup</p>
-            <a href="{{ url('upload')}}" class="cta-button">Send files</a>
-            <a href="{{('download')}}" class="cta-button">Download files</a>
+<section class="hero">
+    <div class="container">
+        <h2>A Secured Way of Sending Files</h2>
+        <h5>Top-tier security algorithm and compression for peak protection and efficiency.</h5>
+        <div class="lottie-player-container">
+            <dotlottie-player
+                src="https://lottie.host/c14cb8a8-9762-4d99-8846-bfcc13cd40c2/rzWIQzwJAh.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px;"
+                loop
+                autoplay
+                class="floating-lottie-player"
+            ></dotlottie-player>
         </div>
-    </section>
-
-    <!-- how to use -->
+        <div class="lottie-player-container1">
+            <dotlottie-player
+                src="https://lottie.host/63b1f8f1-95b3-41f9-b49c-877a7cfa9cfc/uAhYYoheai.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px;"
+                loop
+                autoplay
+                class="floating-lottie-player1"
+            ></dotlottie-player>
+        </div>
+        <p>No need to signup</p>
+        <a href="{{ url('upload')}}" class="cta-button">Send files</a>
+        <a href="{{('download')}}" class="cta-button">Download files</a>
+        
+    </div>
+</section>
     <section class="content">
         <div class="instructions">How to Use </div>
         <div class="containa">
             <div class="silhouette" id="Bulbasaur"><div class="cover"></div></div>
                 <div class="cards">
-                    <h1>Secure</h1>
+                    <h1>Upload</h1>
                     <div class="information" id="BulbasaurInfo">
                     <h2 id="BulbasaurName">Upload</h2>
-                    <p>Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.</p>
-                    <p class="type">Type: <button id="grass">Grass</button> <button id=poison>Poison</button></p>
+                    <p>Easily secure your files by uploading one or more documents, and then safeguard your unique serial number with encryption.</p>
                 </div>
             </div>
         </div>
@@ -34,11 +54,10 @@
         <div class="containa">
             <div class="silhouette" id="Charmander"><div class="cover"></div></div>
                 <div class="cards">
-                    <h1>Your</h1>
+                    <h1>Encrypt</h1>
                     <div class="information" id="CharmanderInfo">
-                    <h2 id="CharmanderName">Encrypt & Decrypt</h2>
-                    <p>The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.</p> 
-                    <p class="type">Type: <button id="fire">Fire</button>
+                    <h2 id="CharmanderName">Encrypt</h2>
+                    <p>We use advanced encryption techniques, involving four prime numbers and offline key generation, to enhance the security of your files.</p> 
                 </div>
             </div>
         </div>
@@ -46,34 +65,11 @@
         <div class="containa">
             <div class="silhouette" id="Squirtle"><div class="cover"></div></div>
                 <div class="cards">
-                    <h1>Files?</h1>
+                    <h1>Download</h1>
                     <div class="information" id="SquirtleInfo">
-                    <h2 id="SquirtleName">Download</h2>
-                    <p>Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.</p>
-                    <p class="type">Type: <button id="water">Water</button>
+                    <h2 id="SquirtleName">Decrypt & Download</h2>
+                    <p>This takes place on the recipient's side. We decrypt the code and compress it to confirm that you are the intended recipient.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="instructions">How to Use </div>
-    </section>
- 
-    <section id="features" class="features">
-        <div class="container">
-            <div class="feature">
-                <img src="icon1.png" alt="Icon 1">
-                <h3>24/7 Monitoring</h3>
-                <p>Our systems are actively monitoring your security round the clock.</p>
-            </div>
-            <div class="feature">
-                <img src="icon2.png" alt="Icon 2">
-                <h3>Advanced Encryption</h3>
-                <p>We use cutting-edge encryption technologies to safeguard your data.</p>
-            </div>
-            <div class="feature">
-                <img src="icon3.png" alt="Icon 3">
-                <h3>Access Control</h3>
-                <p>Manage and control access to your premises with our secure solutions.</p>
             </div>
         </div>
     </section>
